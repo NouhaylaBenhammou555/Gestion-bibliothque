@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart fleet system management</title>
+        <link rel="stylesheet" href="..\\static\\home.css">
+    <body>
+        <section>
+            <header>
+                <nav class="menu">
+                    <ul class="menu_ul">
+                        <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                        <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                        <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                        <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="truck">
+            <h2>Fleet tracking and fleet management for your vehicles</h2>
+            <h4>Easily and affordably, anytime, anywhere!</h4>
+            <button class="login_button" ><a onclick="document.getElementById('Login').style.display='block'">Log In</a></button>
+            <button class="register_button"><a onclick="document.getElementById('register').style.display='block'">Register Now</a></button>
+        </div>
+        <div id="Login" class="modal">
+            <span onclick="document.getElementById('Login').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+            <form class="modal-content animate" action="{{ url_for('login') }}" method="POST">
+              <div class="container">
+                  <br>
+                  <br>
+                  <br>
+                  <label for="Email">Email:</label>
+                  <br>
+                  <input id="Email" placeholder="Enter Email" name="email" type="text" required>
+                  <br>
+                  <br>
+                  <label for="pw">Password:</label>
+                  <br>
+                  <input id="pw" name="pw" placeholder="Enter Password" type="password" required minlength="8" maxlength="15">
+                  <br>
+                  <span class="psw">Forgot <a href="{{ url_for('forget_password') }}">password?</a></span>
+                  <br><br>
+                  <input type="submit" value="Login">
+              </div>
+                <span>Don't have an account? <a href="{{ url_for('register_now') }}">Register</a></span>
+            </form>
+          </div>
+          <div id="register" class="modal">
+            <span onclick="document.getElementById('register').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="{{ url_for('message') }}">
+              <br>
+              <label for="Email">Email:</label>
+              <br>
+              <input id="Email" placeholder="Enter Email" name="email" type="text" required>
+              <br>
+              <label for="username">Username:</label>
+              <br>
+              <input id="username" placeholder="Enter username" name="username" type="text" required>
+              <br>
+              <label for="pw">Password:</label>
+              <br>
+              <input id="pw" name="pw" placeholder="Enter Password" type="password" required minlength="8" maxlength="15">
+              <br>
+              <label for="Phone">Phone Number (optional)</label><br>
+              <input type="text" placeholder="Enter Pnone Number" name="Phone" id="Phone" > 
+              <br>
+              <input type="submit" value="Register">
+              <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+          </form>
+          </div>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart fleet system management</title>
+        <link rel="stylesheet" href="..\\static\\how_it_works.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="title">
+            <h2>How Fleet Management works</h2>
+            <h3>Fleet management made easy and simple</h3>
+        </section>
+        <section class="needs">
+            <h2>What do I need?</h2>
+            <p>All you need for efficient fleet management, is our website and an OBD II device installed on each of your fleet vehicles.</p>
+            <h2>How your fleet vehicles’ data arrives on your smart device</h2>
+            <h2>All you need to do is:</h2>
+            <p>The OBD II device is a small device that collects data from your vehicle’s brain-box (ECU) and sends it to the cloud via a SIM card. Data — such as vehicle speed, fuel levels, temperature, RPM, battery level, trip distance, and much more — are sent to the cloud at regular intervals.</p>
+                <span>1. Install the OBD II device to the OBD II port on each of your fleet vehicles.</span><br>
+                <span>2. Register with our service and start using the website.                      </span><br>
+                <span>3. Connect the deviceto your account and start managing your fleet vehicles.</span><br>
+            
+        </section>
+        <section class="services">
+            <h2>How can I really benefit from Fleet Management?</h2>
+                <h4>Location detection</h4>
+                <p>Locate your parked vehicles and get notifications to help you act in time, in case any of them has been towed.</p>
+                <h4>Vehicle diagnostic data</h4>
+                <p>Use diagnostic alerts and notifications to help you handle malfunction repairs.</p>
+                <h4>Trip log</h4>
+                <p>Use the trip log, with detailed info regarding events and incidents pertinent to your vehicles, and retrieve all the information you need about any business or personal trips.</p>
+                <h4>Fleet Vehicle Status</h4>
+                <p>Get notifications concerning engine faults or other mechanical warnings, so that you can prevent and handle unpleasant situations that may incur costs to your business.</p>
+                <h4>Driving behavior</h4>
+                <p>Keep an eye on your drivers’ on-road behavior. Ensure your fleet vehicles’ good condition. Help prevent speeding tickets or hold drivers responsible for ones received.</p>
+                <h4>Security</h4>
+                <p>We use a multi-layered security algorithm to make sure your data is protected, even in transit from the device to the cloud and then back to your mobile phone.</p>
+            <h3>Do you want to learn more?</h3>
+            <h4>Check our <a href="{{ url_for('demo') }}">Demo</a></h4>
+        </section>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>

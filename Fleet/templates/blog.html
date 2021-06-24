@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart fleet system management</title>
+        <link rel="stylesheet" href="..\\static\\blog.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+            <h2>Blog</h2>
+        <ul id="bog">
+            <li>
+        <section id="blog1">
+            <h2><a href="{{ url_for('blog1') }}">How to set up your GPS fleet tracking system: A quick guide</a></h2>
+            <img src="https://www.veturilo.io/wp-content/uploads/2021/03/fleet-tracking-system.jpg" alt="quick guide">
+            <p>Fleet tracking and fleet management are becoming more and more popular among businesses that own vehicles. This happens not only because of the current pandemic situation, but also because it has many benefits; such as cutting fleet-related expenses and increasing productivity. However, many business owners hesitate, when it comes to purchasing a fleet tracking system. Especially if they believe that setting it up is a complex procedure that costs more time and money than they can afford.</p>
+            <button ><a href="{{ url_for('blog1') }}">Continue reading</a></button>
+        </section>
+            </li>
+            <li>
+        <section id="blog2">
+            <h2><a href="{{ url_for('blog2') }}">Aggressive driving and how to deal with it in your fleet</a></h2>
+            <img src="https://www.veturilo.io/wp-content/uploads/2021/03/aggressive-driving-and-how-to-deal-with-it.jpg" alt="Aggressive driving">
+            <p>Aggressive driving is one of those problems that fleet managers usually take a rain check on dealing with; that is, if they’re aware they have such an issue in their fleet, at all. It’s all well and good, until Pandora’s box opens, and a swarm of problems starts popping out of control. </p>
+            <button ><a href="{{ url_for('blog2') }}">Continue reading</a></button>
+        </section>
+            </li>
+            <li>
+        <section id="blog3">
+            <h2><a href="{{ url_for('blog3') }}">How to select the best fleet management software for you</a></h2>
+            <img src="https://www.veturilo.io/wp-content/uploads/2021/02/best-fleet-management-software.jpg" alt="fleet management software">
+            <p>How to select the best fleet management software for you
+                How to select the best fleet management software for you
+                Fleet managers of today have many tasks to set in order, in their day-to-day responsibilities. Their “just another day in the office” is a cram-full of planning routes, managing drivers, tracking fuel consumption, scheduling maintenance; and, the list goes on. It goes without saying, this is a tall order for a team to handle, let alone one person. Hence, finding the best fleet management software becomes a top priority for managers who need an immediate and smart solution. </p>
+            <button ><a href="{{ url_for('blog3') }}">Continue reading</a></button>
+        </section>
+            </li>
+            <li>
+        <section id="blog4">
+            <h2><a href="{{ url_for('blog4') }}">Fleet maintenance management software helps improve fleet operations</a></h2>
+            <img src="https://www.veturilo.io/wp-content/uploads/2021/01/fleet-maintenance-management-software.jpg" alt="Fleet maintenance">
+            <p>Managing a fleet requires continuous attention to a host of different issues. One of them is keeping fleet vehicles in optimal condition, minimizing downtime. In order for this to happen, an accurate vehicle maintenance schedule is needed; and here is where fleet maintenance management software plays a very important role. </p>
+            <button ><a href="{{ url_for('blog4') }}">Continue reading</a></button>
+        </section>
+            </li>
+        </ul>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>

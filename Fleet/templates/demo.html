@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart fleet system management</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="..\\static\\demo.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="navig">
+            <h1>Get fleet vehicle data on your smart device</h1>
+            <h4>Remotely and instantly know the exact spot, status and health state of each one of your fleet vehicles so that you can handle routine scenarios and unexpected events.</h4>
+            <h3>Here’s what you get:</h3>
+            <nav id="nav_bar">
+                <ul class="icons">
+                <li class="bar"><a href="#loc">Location</a></li>
+                <li class="bar"><a href="#status">Status</a></li>
+                <li class="bar"><a href="#health">Health</a></li>
+                <li class="bar"><a href="#behavior">Driver behavior</a></li>
+                <li class="bar"><a href="#events">Unexpected external events</a></li>
+                <li class="bar"><a href="#trip">Trip log</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="loc">
+            <h2><i class="fas fa-map-marker-alt"></i>Location</h2>
+            <h3>Real-time location of your fleet vehicles on map.</h3>
+
+            <p>Location and engine on/off status is reported periodically – every 30 seconds*. Know the exact spot of your fleet vehicles, whether they’re travelling or are parked. Alerts are reported in real time. Save snapshots of their current status and share their location.</p>
+        </section>
+        <section id="status">
+            <h2>Status</h2>
+            <h3>Status alerts and notifications for all of your fleet vehicles.</h3>
+            <p>Get alerts and notifications for crucial and minor events related to your vehicles status such as battery power, fuel levels, temperature and more. Know when your drivers need to stop to fuel up or when they’re about to run out of battery and take action.</p>
+        </section>
+        <section id="health">
+            <h2>Health</h2>
+            <h3>Vehicle health alerts</h3>
+            
+            <p>Get alerts for critical malfunctions concerning your fleet vehicles (DTC). Veturilo sends an alert whenever a dashboard indicator light turns on, in order for you or your mechanic to assess the problem. Also get towing and OBD removal alerts.</p>
+        </section>
+        <section id="behavior">
+            <h2>Driver behavior</h2>
+            <h3>Your drivers’ road behavior at your disposal</h3>
+            <p>Get alerts concerning aggressive or reckless driving behaviors such as hard braking, fast accelerations and sharp turns. Also, about speed or RPM. Watch over your fleet drivers to make sure they drive safely.</p>
+        </section>
+        <section id="events">
+            <h2>Unexpected external events</h2>
+            <h3>Alerts related to unexpected external events</h3>
+            <p>Act on time when a fleet vehicle is being towed or was involved in an accident while it was parked.</p>
+        </section>
+        <section id="trip">
+            <h2>Trip log</h2>
+            <p><span>Track your mileage,</span>complete with log history<br><span>Use the Business trip indicator</span> for deductible expenses<br>Get historical data per trip with <span>Behavioral indicators and malfunction alerts.</span> See your routes on the map.</p>
+        </section>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>

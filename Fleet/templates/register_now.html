@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>register now</title>
+        <link rel="stylesheet"  href="..\\static\\contact.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="register">
+			<h1>Register now</h1>
+            <form action= "{{ url_for('register_now') }}" method="post">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input id="email" placeholder="Enter Email" name="email" type="text" required>
+                <br>
+                <label for="username">Username:</label>
+                <br>
+                <input id="username" placeholder="Enter username" name="username" type="text" required>
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <input id="pw" name="pw" placeholder="Enter Password" type="password" required minlength="8" maxlength="15">
+                <br>
+                <label for="Phone">Phone Number (optional)</label><br>
+                <input type="text" placeholder="Enter Pnone Number" name="Phone" id="Phone" > 
+                <br>
+                <input type="submit" value="Register">
+                <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+                <br>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>

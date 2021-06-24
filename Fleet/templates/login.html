@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="..\\static\\contact.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <br>
+        
+			<h1>Login</h1>
+            <form id="login" action="{{ url_for('login') }}" method="POST">
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input id="email" placeholder="Enter Email" name="email" type="text" required>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="pw">Password:</label>
+                    <br>
+                    <input id="pw" name="pw" placeholder="Enter Password" type="password" required minlength="8" maxlength="15">
+                    <br>
+                    <span style="color: black;">Forgot <a href="{{ url_for('forget_password') }}">password?</a></span>
+                    <br><br><br>
+                    <input type="submit" value="Login"><br>
+                    <span style="color: black;">Don't have an account? <a href="{{ url_for('register_now') }}">Register</a></span>
+                    <br>
+                    <br>
+                    <br>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>

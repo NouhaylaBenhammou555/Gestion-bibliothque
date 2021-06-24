@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="..\\static\\contact.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_li"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a  href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">How it works</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register_now') }}">Register now</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contact">
+            <form action='mailto:fleetmanagementsystempfa@gmail.com' method='GET'>
+            <h2>Contact Us</h2>
+            
+                <label for="request">Type of request</label><br>
+                <select name="Type of request" id="request">
+                  <option value="Information">Information</option>
+                  <option value="Sales">Sales</option>
+                  <option value="Careers">Careers</option>
+                  <option value="Partnership">Partnership</option>
+                </select>
+            
+            <br>
+            
+                <label for="name">Your Name (required)</label><br>
+                      <input type="text" placeholder="Enter Full Name" name="name" id="name" required> 
+              
+              <br>
+           
+                <label for="email">Your Email (required)</label><br>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required> 
+              
+              <br>
+           
+                <label for="phone">Your Phone Number (optional)</label><br>
+                      <input type="text" placeholder="Enter Phone Number" name="phone" id="phone" > 
+              
+              <br>
+            
+                <label for="subject">Subject</label><br>
+                      <input type="text" placeholder="Enter Subject" name="subject" id="subject" > 
+            
+            <br>
+            
+                <label for="body">Your Message</label>
+                <br>
+                <textarea id="message" placeholder="Enter Message" name="body" rows="6" cols="40"></textarea>
+            
+            <br>
+            
+                <input type="submit"  value="Send">
+                <br>
+                <br> 
+               
+        </form>
+      
+        </section>
+        <footer>
+            <ul>
+                <li><h5 class="copy_right">© Copyright 2021 All rights reserved</h5></li>
+                <li><h5 class="smart">Smart Fleet Management System</h5></li>
+            </ul>
+        </footer>
+    </body>
+</html>
